@@ -16,6 +16,18 @@ separately.
 - local metrics
 - embedded runtime lifecycle
 
+## Initial runtime-backed admin categories
+
+The private runtime has started exposing the provider administration categories that
+SOLAI Coder can later use from the CLI/TUI:
+
+- provider lookup
+- provider enable
+- provider disable
+- provider pricing metadata
+- provider availability schedule metadata
+- structured missing-provider errors
+
 ## Example command surface
 
 ```bash
@@ -30,4 +42,3 @@ solai provider disable
 
 Coder should make Node easy to operate. Node should remain the source of truth for
 provider state, inference jobs, metering, and runtime policy.
-
