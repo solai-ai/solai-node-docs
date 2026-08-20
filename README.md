@@ -12,6 +12,8 @@ code, partner integrations, or infrastructure internals.
 
 ## Documents
 
+- [Public Architecture](architecture.md)
+- [Administering SOLAI Node From SOLAI Coder](coder-admin.md)
 - [Roadmap](roadmap.md)
 
 ## Repository model
@@ -19,4 +21,3 @@ code, partner integrations, or infrastructure internals.
 - `solai-ai/solai-node`: private runtime and platform implementation
 - `solai-ai/solai-node-docs`: public roadmap, architecture notes, and progress updates
 - `solai-ai/solai-coder`: public local-first coding experience
-

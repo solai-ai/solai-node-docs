@@ -81,3 +81,7 @@ The public repository should not expose:
 The SOLAI Node repository has been created as a private runtime repository.
 This public docs repository tracks roadmap and community-facing progress.
 
+Current public docs:
+
+- [Public Architecture](architecture.md)
+- [Administering SOLAI Node From SOLAI Coder](coder-admin.md)
