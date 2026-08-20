@@ -22,6 +22,7 @@ separately.
 - bounded runtime event inspection
 - job route inspection
 - runtime metering inspection
+- runtime mode control
 - embedded runtime lifecycle
 
 ## Initial runtime-backed admin categories
@@ -48,6 +49,7 @@ SOLAI Coder can later use from the CLI/TUI:
 - bounded runtime event inspection
 - job route inspection
 - runtime execution and metering display
+- pause and drain controls for runtime maintenance
 - filtered runtime lists
 - stable ordered provider and job lists
 - constrained job status transitions

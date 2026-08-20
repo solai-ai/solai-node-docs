@@ -91,7 +91,8 @@ previous local job format, job detail inspection, job attempt tracking, parent-j
 linkage, job-to-provider assignment, bounded runtime event inspection, filtered
 operational list views, safer default response limits, internal queue execution,
 job result/error state, execution timing, provider heartbeat category, routing
-inspection, and initial metering records.
+inspection, initial metering records, runtime mode controls, queue pause/drain
+controls, and structured execution failure records.
 
 This public docs repository tracks roadmap and community-facing progress.
 

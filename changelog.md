@@ -6,6 +6,27 @@ partner-specific logic.
 
 ## 2026-08-20
 
+### Runtime operations and failure handling hardened
+
+The private SOLAI Node runtime now has operator-facing runtime modes and structured
+failure handling for the execution lifecycle.
+
+Publicly shareable progress:
+
+- Runtime mode category added
+- Operators can inspect runtime queue state
+- Runtime can be switched between running, paused, and draining modes
+- Queue worker only starts jobs while the runtime is in running mode
+- Structured adapter failure path added
+- Failed jobs now persist error details and execution timing
+- Failed jobs emit operational events
+- Tests added for paused runtime behavior and structured failure recording
+- Runtime validation confirmed paused jobs remain queued, running mode resumes processing, and forced failures are recorded without metering
+
+This update does not expose private provider adapter implementation, failure policy
+internals, credential handling, billing internals, partner workload logic, or
+infrastructure topology.
+
 ### Execution and metering lifecycle started
 
 The private SOLAI Node runtime now has the first end-to-end execution lifecycle for

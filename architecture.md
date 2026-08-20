@@ -35,6 +35,8 @@ boundary and the integration model.
 - queue execution lifecycle
 - job result, error, execution timing, and metering records
 - provider heartbeat category
+- runtime mode controls for running, paused, and draining operation
+- structured execution failure records
 
 ## What SOLAI Coder owns
 
@@ -55,6 +57,7 @@ private routing logic, infrastructure topology, or partner-specific implementati
 - health, version, and readiness diagnostics
 - protected runtime metrics
 - protected runtime metering
+- protected runtime mode inspection and updates
 - provider discovery and inspection
 - provider enable, disable, heartbeat, unavailable, delete, price, schedule, and refresh controls
 - job intake, lookup, detail, route inspection, listing, provider assignment, status updates, cancellation, and retry controls
