@@ -81,8 +81,8 @@ The public repository should not expose:
 The SOLAI Node repository has been created as a private runtime repository.
 The initial private runtime foundation is now in place, including versioned contract
 types, provider discovery, a standalone runtime entrypoint, health checks, provider
-listing, provider probing, initial job intake, provider administration, and local
-runtime state persistence.
+listing, provider probing, initial job intake, provider administration, local runtime
+state persistence, operational metrics, and basic job cancellation.
 
 This public docs repository tracks roadmap and community-facing progress.
 

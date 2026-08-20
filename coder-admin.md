@@ -27,6 +27,8 @@ SOLAI Coder can later use from the CLI/TUI:
 - provider pricing metadata
 - provider availability schedule metadata
 - structured missing-provider errors
+- runtime metrics
+- job lookup and cancellation
 
 ## Example command surface
 

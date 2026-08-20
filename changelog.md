@@ -6,6 +6,33 @@ partner-specific logic.
 
 ## 2026-08-20
 
+### Operational metrics and job cancellation started
+
+The private SOLAI Node runtime now has the first operational metrics surface and
+basic job cancellation.
+
+Publicly shareable progress:
+
+- Runtime metrics endpoint added
+- Provider counts by status added
+- Job counts by status added
+- Job cancellation endpoint added
+- CLI support started for runtime metrics
+- CLI support started for job lookup and job cancellation
+- Cancelled jobs persist to local runtime state
+- Tests added for provider and job metrics
+- Runtime validation confirmed metrics update after job cancellation
+
+Current operational endpoint categories:
+
+```text
+GET  /v1/metrics
+POST /v1/jobs/{job_id}/cancel
+```
+
+This update does not expose private scheduling internals, routing logic, provider
+execution details, billing internals, tenant policy, or partner-specific implementation.
+
 ### Local runtime persistence started
 
 The private SOLAI Node runtime now persists local runtime state across restarts.
