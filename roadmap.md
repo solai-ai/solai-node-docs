@@ -79,9 +79,14 @@ The public repository should not expose:
 ## Current status
 
 The SOLAI Node repository has been created as a private runtime repository.
+The initial private runtime foundation is now in place, including versioned contract
+types, provider discovery, a standalone runtime entrypoint, health checks, provider
+listing, provider probing, and initial job intake.
+
 This public docs repository tracks roadmap and community-facing progress.
 
 Current public docs:
 
 - [Public Architecture](architecture.md)
 - [Administering SOLAI Node From SOLAI Coder](coder-admin.md)
+- [Public Changelog](changelog.md)
