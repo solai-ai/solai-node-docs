@@ -20,6 +20,8 @@ separately.
 - job detail inspection
 - job-to-provider assignment
 - bounded runtime event inspection
+- job route inspection
+- runtime metering inspection
 - embedded runtime lifecycle
 
 ## Initial runtime-backed admin categories
@@ -44,6 +46,8 @@ SOLAI Coder can later use from the CLI/TUI:
 - job detail controls
 - job-to-provider assignment controls
 - bounded runtime event inspection
+- job route inspection
+- runtime execution and metering display
 - filtered runtime lists
 - stable ordered provider and job lists
 - constrained job status transitions
@@ -59,7 +63,9 @@ solai provider disable
 solai provider unavailable
 solai provider delete
 solai node events
+solai node metering
 solai job detail
+solai job route
 solai job assign
 solai job retry
 ```

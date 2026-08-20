@@ -89,7 +89,9 @@ stable ordered list responses, stricter job validation, constrained job status
 transitions, runtime state schema compatibility checks, forward migration from the
 previous local job format, job detail inspection, job attempt tracking, parent-job
 linkage, job-to-provider assignment, bounded runtime event inspection, filtered
-operational list views, and safer default response limits.
+operational list views, safer default response limits, internal queue execution,
+job result/error state, execution timing, provider heartbeat category, routing
+inspection, and initial metering records.
 
 This public docs repository tracks roadmap and community-facing progress.
 

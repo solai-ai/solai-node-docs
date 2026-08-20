@@ -32,6 +32,9 @@ boundary and the integration model.
 - runtime state compatibility policy
 - bounded operational event history
 - job detail and provider assignment policy
+- queue execution lifecycle
+- job result, error, execution timing, and metering records
+- provider heartbeat category
 
 ## What SOLAI Coder owns
 
@@ -51,8 +54,9 @@ private routing logic, infrastructure topology, or partner-specific implementati
 
 - health, version, and readiness diagnostics
 - protected runtime metrics
+- protected runtime metering
 - provider discovery and inspection
-- provider enable, disable, unavailable, delete, price, schedule, and refresh controls
-- job intake, lookup, detail, listing, provider assignment, status updates, cancellation, and retry controls
+- provider enable, disable, heartbeat, unavailable, delete, price, schedule, and refresh controls
+- job intake, lookup, detail, route inspection, listing, provider assignment, status updates, cancellation, and retry controls
 - bounded runtime event inspection
 - filtered operational list views

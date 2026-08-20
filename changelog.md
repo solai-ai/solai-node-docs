@@ -6,6 +6,30 @@ partner-specific logic.
 
 ## 2026-08-20
 
+### Execution and metering lifecycle started
+
+The private SOLAI Node runtime now has the first end-to-end execution lifecycle for
+jobs, from queue intake through runtime result and metering records.
+
+Publicly shareable progress:
+
+- Internal queue worker category started
+- Initial deterministic adapter path added for lifecycle validation
+- Job execution state now records timing and adapter category
+- Job result and structured error fields added to runtime state
+- Metering record category added
+- Runtime metering inspection endpoint category added
+- Provider heartbeat category added
+- Job routing inspection category added
+- Runtime metrics now include metering record count
+- Worker emits job started, job completed, and metering recorded events
+- Tests added for routing and worker-driven completion
+- Runtime validation confirmed schema generation, automatic job completion, result recording, execution timing, metering output, and operational events
+
+This update does not expose private provider adapter implementation, routing
+policy internals, billing internals, partner workload logic, credentials, or
+infrastructure topology.
+
 ### Runtime state and audit surface expanded
 
 The private SOLAI Node runtime now has stronger state handling and operational
