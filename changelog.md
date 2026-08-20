@@ -6,6 +6,24 @@ partner-specific logic.
 
 ## 2026-08-20
 
+### Local runtime persistence started
+
+The private SOLAI Node runtime now persists local runtime state across restarts.
+
+Publicly shareable progress:
+
+- Runtime data directory support added
+- Environment-based data directory configuration added
+- Provider and job state persistence started
+- Atomic state-file writes added
+- Missing state file now loads as an empty runtime state
+- Tests added for state loading and round-trip persistence
+- Runtime validation confirmed state is written after job intake
+
+This update does not expose private state schema evolution plans, provider secrets,
+tenant policy, billing calculation internals, infrastructure topology, or
+partner-specific implementation.
+
 ### Provider administration surface started
 
 The private SOLAI Node runtime now includes the first provider administration
