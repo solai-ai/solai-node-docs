@@ -17,6 +17,9 @@ separately.
 - local metrics
 - provider unavailable and delete controls
 - job status, cancellation, and retry controls
+- job detail inspection
+- job-to-provider assignment
+- bounded runtime event inspection
 - embedded runtime lifecycle
 
 ## Initial runtime-backed admin categories
@@ -38,6 +41,10 @@ SOLAI Coder can later use from the CLI/TUI:
 - public version and readiness diagnostics
 - provider unavailable and delete controls
 - job retry controls
+- job detail controls
+- job-to-provider assignment controls
+- bounded runtime event inspection
+- filtered runtime lists
 - stable ordered provider and job lists
 - constrained job status transitions
 
@@ -51,6 +58,9 @@ solai provider schedule --from 22:00 --to 07:00
 solai provider disable
 solai provider unavailable
 solai provider delete
+solai node events
+solai job detail
+solai job assign
 solai job retry
 ```
 

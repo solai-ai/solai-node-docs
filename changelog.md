@@ -6,6 +6,32 @@ partner-specific logic.
 
 ## 2026-08-20
 
+### Runtime state and audit surface expanded
+
+The private SOLAI Node runtime now has stronger state handling and operational
+inspection for local, Coder-managed, and standalone deployments.
+
+Publicly shareable progress:
+
+- Runtime state advanced to the next schema generation
+- Existing local state can migrate forward from the previous job format
+- Job detail inspection category added
+- Job retry now preserves original job payload metadata at the runtime level
+- Job attempt tracking and parent-job linkage added
+- Optional provider assignment category added for jobs
+- Bounded runtime event inspection category added
+- Provider, job, and event list filtering started
+- Default response limits added for operational list endpoints
+- Provider deletion is guarded when active jobs still reference the provider
+- Additional validation added for job payload size and identifier lengths
+- CLI support added for runtime events, job detail, and job assignment
+- Tests added for migration, filtering, event trimming, payload limits, and retry payload preservation
+- Runtime validation confirmed protected events, job detail, filtered list responses, cancellation, retry, and event records
+
+This update does not expose private payload contents, provider adapters, routing
+logic, execution internals, billing internals, tenant policy, credentials, or
+partner-specific implementation.
+
 ### Runtime control surface expanded
 
 The private SOLAI Node runtime now has a broader production control surface for

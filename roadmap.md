@@ -86,7 +86,10 @@ state persistence, operational metrics, basic job cancellation, optional runtime
 key protection, job listing, job status updates, provider refresh, public version
 and readiness diagnostics, provider unavailable/delete controls, job retry controls,
 stable ordered list responses, stricter job validation, constrained job status
-transitions, and runtime state schema compatibility checks.
+transitions, runtime state schema compatibility checks, forward migration from the
+previous local job format, job detail inspection, job attempt tracking, parent-job
+linkage, job-to-provider assignment, bounded runtime event inspection, filtered
+operational list views, and safer default response limits.
 
 This public docs repository tracks roadmap and community-facing progress.
 
