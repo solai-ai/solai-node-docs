@@ -9,11 +9,14 @@ separately.
 ## Planned admin surfaces
 
 - Node health and availability
+- Node version and readiness
 - provider status
 - model inventory
 - pricing controls
 - availability schedules
 - local metrics
+- provider unavailable and delete controls
+- job status, cancellation, and retry controls
 - embedded runtime lifecycle
 
 ## Initial runtime-backed admin categories
@@ -32,6 +35,11 @@ SOLAI Coder can later use from the CLI/TUI:
 - job listing and status updates
 - provider refresh
 - optional runtime API key support
+- public version and readiness diagnostics
+- provider unavailable and delete controls
+- job retry controls
+- stable ordered provider and job lists
+- constrained job status transitions
 
 ## Example command surface
 
@@ -41,6 +49,9 @@ solai provider status
 solai provider price SOLAI-20B 4
 solai provider schedule --from 22:00 --to 07:00
 solai provider disable
+solai provider unavailable
+solai provider delete
+solai job retry
 ```
 
 ## Product direction

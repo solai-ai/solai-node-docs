@@ -83,7 +83,10 @@ The initial private runtime foundation is now in place, including versioned cont
 types, provider discovery, a standalone runtime entrypoint, health checks, provider
 listing, provider probing, initial job intake, provider administration, local runtime
 state persistence, operational metrics, basic job cancellation, optional runtime API
-key protection, job listing, job status updates, and provider refresh.
+key protection, job listing, job status updates, provider refresh, public version
+and readiness diagnostics, provider unavailable/delete controls, job retry controls,
+stable ordered list responses, stricter job validation, constrained job status
+transitions, and runtime state schema compatibility checks.
 
 This public docs repository tracks roadmap and community-facing progress.
 

@@ -27,7 +27,9 @@ boundary and the integration model.
 - pricing and availability metadata
 - metering and usage records
 - routing and fallback behavior
-- runtime health and metrics
+- runtime health, readiness, version reporting, and metrics
+- job lifecycle policy and retry behavior
+- runtime state compatibility policy
 
 ## What SOLAI Coder owns
 
@@ -43,3 +45,10 @@ Public updates should describe milestones, capabilities, endpoint categories, an
 integration progress. They should not expose provider secrets, billing internals,
 private routing logic, infrastructure topology, or partner-specific implementation.
 
+## Current public endpoint categories
+
+- health, version, and readiness diagnostics
+- protected runtime metrics
+- provider discovery and inspection
+- provider enable, disable, unavailable, delete, price, schedule, and refresh controls
+- job intake, lookup, listing, status updates, cancellation, and retry controls

@@ -6,6 +6,30 @@ partner-specific logic.
 
 ## 2026-08-20
 
+### Runtime control surface expanded
+
+The private SOLAI Node runtime now has a broader production control surface for
+Coder-managed and standalone deployments.
+
+Publicly shareable progress:
+
+- Public version endpoint added for local automation and diagnostics
+- Public readiness endpoint added for runtime orchestration
+- Provider unavailable state endpoint added
+- Provider deletion endpoint added
+- Job retry endpoint added for failed or cancelled jobs
+- Provider and job list responses are now stable ordered
+- Job creation validation rejects empty model values
+- Job status transitions are now constrained
+- Runtime state loading rejects unsupported future schema versions
+- CLI support added for version, readiness, provider unavailable, provider delete, and job retry
+- Tests added for schema compatibility, stable ordering, job validation, and status transitions
+- Runtime validation confirmed public diagnostics, protected endpoints, cancellation, invalid-transition conflict, and retry behavior
+
+This update does not expose private routing logic, execution internals, payload
+handling, billing internals, tenant policy, provider integrations, credentials,
+or partner-specific implementation.
+
 ### Runtime operations hardened
 
 The private SOLAI Node runtime now has stronger operational controls for local and
