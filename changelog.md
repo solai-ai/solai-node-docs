@@ -6,6 +6,30 @@ partner-specific logic.
 
 ## 2026-08-20
 
+### Runtime operations hardened
+
+The private SOLAI Node runtime now has stronger operational controls for local and
+Coder-managed deployments.
+
+Publicly shareable progress:
+
+- Optional runtime API key support added
+- Health remains available for local probes
+- Operational endpoints can now require authenticated requests
+- CLI requests can use the same runtime API key from the environment
+- Provider refresh endpoint added
+- Job listing endpoint added
+- Job status update endpoint added
+- Local state now includes an explicit schema version
+- Provider price validation added
+- Provider schedule validation added
+- Tests added for authentication, validation, status parsing, metrics, and persistence
+- Runtime validation confirmed protected endpoints reject unauthenticated calls
+
+This update does not expose private auth policy evolution, key management internals,
+provider execution details, routing logic, tenant policy, infrastructure topology,
+or partner-specific implementation.
+
 ### Operational metrics and job cancellation started
 
 The private SOLAI Node runtime now has the first operational metrics surface and

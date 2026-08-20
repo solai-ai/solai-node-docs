@@ -29,6 +29,9 @@ SOLAI Coder can later use from the CLI/TUI:
 - structured missing-provider errors
 - runtime metrics
 - job lookup and cancellation
+- job listing and status updates
+- provider refresh
+- optional runtime API key support
 
 ## Example command surface
 
