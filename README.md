@@ -3,8 +3,8 @@
 Public roadmap and documentation for SOLAI Node.
 
 SOLAI Node is the private inference runtime for the SOLAI platform. It connects
-applications, compute providers, model providers, pricing, telemetry, and partner
-workloads.
+SOLAI Coder, DApps across multiple market segments, compute providers, model
+providers, pricing, telemetry, and partner workloads.
 
 The implementation details and provider integrations remain private. This repository
 exists so the community can follow the direction without exposing security-sensitive

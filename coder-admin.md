@@ -51,6 +51,7 @@ SOLAI Coder can later use from the CLI/TUI:
 - runtime execution and metering display
 - pause and drain controls for runtime maintenance
 - filtered runtime lists
+- bounded metering filters by tenant, provider, job, workload, and model
 - stable ordered provider and job lists
 - constrained job status transitions
 

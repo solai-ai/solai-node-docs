@@ -4,6 +4,26 @@ This changelog tracks public SOLAI Node progress without exposing private runtim
 implementation details, provider integrations, billing internals, credentials, or
 partner-specific logic.
 
+## 2026-08-24
+
+### Bounded metering inspection added
+
+The private SOLAI Node runtime now supports bounded, filterable metering reads for
+Coder-managed and standalone operator workflows.
+
+Publicly shareable progress:
+
+- Metering list responses now follow the bounded operational list pattern
+- Metering records can be filtered by tenant, provider, job, workload, and model
+- Metering responses are returned in stable recorded-time order
+- Pagination support added for metering inspection
+- Tests added for metering filtering, ordering, and pagination
+- Runtime validation confirmed the full test suite passes after the metering update
+
+This update does not expose private billing implementation details, pricing policy,
+provider adapter internals, partner workload logic, credentials, or infrastructure
+topology.
+
 ## 2026-08-20
 
 ### Runtime operations and failure handling hardened

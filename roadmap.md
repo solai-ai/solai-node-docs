@@ -13,11 +13,11 @@ security-sensitive code, partner integrations, or infrastructure internals.
 SOLAI Coder is the public local-first coding experience.
 
 SOLAI Node is the inference layer that powers provider discovery, workload routing,
-usage tracking, and external partner access.
+usage tracking, SOLAI Coder, and DApps across multiple market segments.
 
 The Coder can use a local embedded Node for a simple user experience. Partners and
-larger deployments can use SOLAI Node as a standalone service when they only need
-inference access.
+larger deployments can use SOLAI Node as a standalone service when they need
+authenticated inference access without the full Coder experience.
 
 ## Public milestones
 
@@ -51,9 +51,11 @@ inference access.
 
 ### Phase 5: Partner workloads
 
+- Define the DApp integration model for external applications across multiple segments
+- Keep SOLAI Coder as the first embedded client while supporting non-Coder inference clients
 - Support image, video, text, audio, and other inference workloads through provider adapters
 - Track tenant usage and metering
-- Add partner-facing API documentation
+- Add DApp and partner-facing API documentation
 - Add operational controls for quotas, rate limits, and billing records
 
 ## Public progress format
@@ -91,8 +93,8 @@ previous local job format, job detail inspection, job attempt tracking, parent-j
 linkage, job-to-provider assignment, bounded runtime event inspection, filtered
 operational list views, safer default response limits, internal queue execution,
 job result/error state, execution timing, provider heartbeat category, routing
-inspection, initial metering records, runtime mode controls, queue pause/drain
-controls, and structured execution failure records.
+inspection, initial metering records, bounded metering inspection, runtime mode
+controls, queue pause/drain controls, and structured execution failure records.
 
 This public docs repository tracks roadmap and community-facing progress.
 

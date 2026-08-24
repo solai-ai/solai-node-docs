@@ -1,8 +1,8 @@
 # Public Architecture
 
 SOLAI Node is the inference runtime for the SOLAI platform. It connects SOLAI Coder,
-partner applications, provider machines, model providers, pricing, telemetry, and
-usage tracking.
+DApps across multiple market segments, partner applications, provider machines,
+model providers, pricing, telemetry, and usage tracking.
 
 The runtime implementation is private. This public document describes the product
 boundary and the integration model.
@@ -17,11 +17,12 @@ boundary and the integration model.
 
 - **Embedded**: SOLAI Coder starts or administers a local SOLAI Node for the user
 - **Standalone local**: SOLAI Node runs by itself on a local or provider machine
-- **Standalone remote**: SOLAI Node runs as a service for applications and partners
+- **Standalone remote**: SOLAI Node runs as a service for DApps, applications, and partners
 
 ## What SOLAI Node owns
 
 - inference jobs
+- DApp and partner inference access
 - provider registration and discovery
 - provider health and model inventory
 - pricing and availability metadata
