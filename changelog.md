@@ -6,6 +6,24 @@ partner-specific logic.
 
 ## 2026-08-29
 
+### First native SOLAI Coder client completed
+
+SOLAI Coder can now talk directly to a running SOLAI Node from its main CLI.
+The initial client covers runtime health, local-provider discovery, and a real
+asynchronous chat job from submission through final model output.
+
+Publicly shareable progress:
+
+- Added `solai node health`, `solai node probe`, and `solai node chat`
+- Added configurable Node URL and optional API-key forwarding
+- Chat jobs poll the Node lifecycle and return assistant text or complete JSON
+- Provider selection can be explicit or delegated to Node routing
+- Focused CLI tests and compile validation added
+- Live acceptance confirms the Coder-to-Node-to-local-model path
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### First real local inference path completed
 
 SOLAI Node has moved beyond the deterministic execution path for its first text
