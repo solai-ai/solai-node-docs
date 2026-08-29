@@ -4,6 +4,29 @@ This changelog tracks public SOLAI Node progress without exposing private runtim
 implementation details, provider integrations, billing internals, credentials, or
 partner-specific logic.
 
+## 2026-08-29
+
+### First real local inference path completed
+
+SOLAI Node has moved beyond the deterministic execution path for its first text
+workload. A discovered local model provider can now receive an asynchronous chat
+job, execute it, and return the model response through the normal Node lifecycle.
+
+Publicly shareable progress:
+
+- Provider discovery now records the provider protocol category
+- First real chat workload adapter added
+- Queue routing now selects the execution adapter from the provider category
+- Successful jobs persist the model response, timing, and token counts
+- Generated-token usage is recorded in the metering entry
+- Connection, provider, input, and response failures use structured job errors
+- Unit, formatting, and lint validation pass
+- A live local-provider acceptance run confirmed probe, queue, execution, result,
+  and metering behavior without simulated inference
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ## 2026-08-24
 
 ### Bounded metering inspection added

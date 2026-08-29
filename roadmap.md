@@ -94,7 +94,10 @@ linkage, job-to-provider assignment, bounded runtime event inspection, filtered
 operational list views, safer default response limits, internal queue execution,
 job result/error state, execution timing, provider heartbeat category, routing
 inspection, initial metering records, bounded metering inspection, runtime mode
-controls, queue pause/drain controls, and structured execution failure records.
+controls, queue pause/drain controls, structured execution failure records, the
+provider adapter boundary, provider protocol classification, and the first real
+local chat inference path with persisted results, token usage, and metering. The
+real path has been validated end to end against a live local model provider.
 
 This public docs repository tracks roadmap and community-facing progress.
 
