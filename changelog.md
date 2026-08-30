@@ -33,6 +33,7 @@ Publicly shareable progress:
 - Rejects explicit assignment to a provider at its reported capacity
 - Selects another compatible provider when capacity is available
 - Explains capacity exhaustion during route inspection
+- Supports bounded provider listing by reported capacity state
 
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
