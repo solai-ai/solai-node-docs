@@ -46,6 +46,7 @@ heartbeats.
 Publicly shareable progress:
 
 - Reports total known provider capacity and active-job counts
+- Reports how many providers are at their reported capacity
 - Reports routing-eligible available capacity slots
 - Keeps raw provider topology and billing logic private
 
