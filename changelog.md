@@ -6,6 +6,21 @@ partner-specific logic.
 
 ## 2026-08-30
 
+### Strict local runtime configuration added
+
+SOLAI Node can now load its bind address and runtime data directory from a
+strict local JSON configuration file.
+
+Publicly shareable progress:
+
+- Added `--config` and `SOLAI_NODE_CONFIG` support for `serve`
+- Rejects unknown configuration fields at startup
+- CLI and environment values override file settings
+- Keeps API keys outside normal configuration files
+
+This update does not expose credentials, provider addresses, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Native Coder operations expanded
 
 SOLAI Coder can now inspect and control the essential operational state of a

@@ -14,6 +14,7 @@ code, partner integrations, or infrastructure internals.
 
 - [Public Architecture](architecture.md)
 - [Administering SOLAI Node From SOLAI Coder](coder-admin.md)
+- [Runtime Configuration](runtime-configuration.md)
 - [Public Changelog](changelog.md)
 - [Roadmap](roadmap.md)
 

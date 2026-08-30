@@ -115,6 +115,8 @@ Worker-completed jobs now have matching HTTP coverage for persisted detail,
 metering, and completion-event inspection.
 A 20-case local HTTP contract hardening round now covers diagnostics, API-key
 authentication, structured validation errors, and job lifecycle protections.
+The runtime now has strict local JSON configuration for bind and data-directory
+settings while keeping API keys out of normal configuration files.
 
 This public docs repository tracks roadmap and community-facing progress.
 
