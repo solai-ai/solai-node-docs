@@ -16,6 +16,7 @@ Publicly shareable progress:
 - Persists supplied capacity and active-job counts
 - Rejects heartbeat data where active jobs exceed known capacity
 - Returns the persisted fields through provider inspection
+- Preserves provider status when a heartbeat only updates capacity data
 
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.

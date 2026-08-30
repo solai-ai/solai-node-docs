@@ -82,3 +82,4 @@ Heartbeat capacity and active-job counts are persisted by Node; active jobs cann
 exceed a provider's known capacity.
 Providers at reported capacity are excluded from routing and reject new explicit
 job assignments until their next available-capacity heartbeat.
+Capacity-only heartbeats preserve the provider's current availability state.
