@@ -32,6 +32,7 @@ Publicly shareable progress:
 - Excludes a full provider from automatic routing
 - Rejects explicit assignment to a provider at its reported capacity
 - Selects another compatible provider when capacity is available
+- Explains capacity exhaustion during route inspection
 
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
