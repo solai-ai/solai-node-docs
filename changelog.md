@@ -33,6 +33,17 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Provider capacity metrics added
+
+Runtime metrics now summarize the capacity information supplied by provider
+heartbeats.
+
+Publicly shareable progress:
+
+- Reports total known provider capacity and active-job counts
+- Reports routing-eligible available capacity slots
+- Keeps raw provider topology and billing logic private
+
 ### Strict local runtime configuration added
 
 SOLAI Node can now load its bind address and runtime data directory from a

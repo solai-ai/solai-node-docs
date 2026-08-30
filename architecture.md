@@ -36,6 +36,7 @@ boundary and the integration model.
 - queue execution lifecycle
 - job result, error, execution timing, and metering records
 - provider heartbeat category
+- reported provider capacity, active-job, and available-slot metrics
 - runtime mode controls for running, paused, and draining operation
 - structured execution failure records
 
