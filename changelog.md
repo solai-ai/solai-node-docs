@@ -20,6 +20,19 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Capacity-aware provider routing added
+
+Provider capacity reports now affect operational routing and assignment decisions.
+
+Publicly shareable progress:
+
+- Excludes a full provider from automatic routing
+- Rejects explicit assignment to a provider at its reported capacity
+- Selects another compatible provider when capacity is available
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Strict local runtime configuration added
 
 SOLAI Node can now load its bind address and runtime data directory from a
