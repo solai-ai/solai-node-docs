@@ -111,6 +111,8 @@ The core job lifecycle now has matching HTTP coverage for creation, inspection,
 routing, cancellation, and retry.
 Runtime diagnostics, metrics, mode changes, status, and mode events now also
 have local HTTP coverage with authorization checks.
+Worker-completed jobs now have matching HTTP coverage for persisted detail,
+metering, and completion-event inspection.
 
 This public docs repository tracks roadmap and community-facing progress.
 

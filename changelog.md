@@ -100,6 +100,20 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Completed-job HTTP coverage added
+
+The Node test suite now verifies the HTTP-visible records produced by the worker
+after a job finishes.
+
+Publicly shareable progress:
+
+- Verifies completed job detail and output
+- Verifies filtered metering and completion-event inspection
+- Keeps the worker and HTTP coverage local and independent from external models
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Native Coder job control completed
 
 SOLAI Coder can now inspect and control the normal lifecycle of asynchronous
