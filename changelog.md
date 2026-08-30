@@ -34,6 +34,7 @@ Publicly shareable progress:
 - Selects another compatible provider when capacity is available
 - Explains capacity exhaustion during route inspection
 - Supports bounded provider listing by reported capacity state
+- Distinguishes providers with no capacity report from those below capacity
 
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.

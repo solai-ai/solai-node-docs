@@ -110,6 +110,8 @@ and active-job deletion protection.
 Heartbeat capacity and active-job counts are now persisted with validation.
 Routing and explicit assignment now exclude providers at their reported capacity.
 Runtime metrics now include the aggregate number of providers at reported capacity.
+Operational provider lists can distinguish capacity-reporting providers from
+providers that have not reported capacity.
 The core job lifecycle now has matching HTTP coverage for creation, inspection,
 routing, cancellation, and retry.
 Runtime diagnostics, metrics, mode changes, status, and mode events now also
