@@ -110,6 +110,7 @@ and active-job deletion protection.
 Heartbeat capacity and active-job counts are now persisted with validation.
 Routing and explicit assignment now exclude providers at their reported capacity.
 Runtime metrics now include the aggregate number of providers at reported capacity.
+Runtime metrics also show how many providers supply capacity telemetry.
 Operational provider lists can distinguish capacity-reporting providers from
 providers that have not reported capacity.
 Operator tooling can require a minimum number of reported free capacity slots.
