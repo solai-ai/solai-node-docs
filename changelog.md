@@ -40,6 +40,7 @@ Publicly shareable progress:
 - Excludes a full provider from automatic routing
 - Rejects explicit assignment to a provider at its reported capacity
 - Selects another compatible provider when capacity is available
+- Prefers compatible providers reporting more available capacity
 - Explains capacity exhaustion during route inspection
 - Supports bounded provider listing by reported capacity state
 - Distinguishes providers with no capacity report from those below capacity

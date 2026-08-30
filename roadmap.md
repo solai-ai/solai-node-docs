@@ -109,6 +109,7 @@ also have in-process HTTP coverage, including bounded filtering, state changes,
 and active-job deletion protection.
 Heartbeat capacity and active-job counts are now persisted with validation.
 Routing and explicit assignment now exclude providers at their reported capacity.
+Automatic routing prefers compatible providers reporting more available capacity.
 Runtime metrics now include the aggregate number of providers at reported capacity.
 Runtime metrics also show how many providers supply capacity telemetry.
 Operational provider lists can distinguish capacity-reporting providers from
