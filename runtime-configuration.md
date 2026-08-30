@@ -13,8 +13,9 @@ settings. It is passed through `solai-node serve --config PATH` or the
 ```
 
 The file accepts only `bind`, `data_dir`, and `worker_tick_ms`; unknown fields are rejected. CLI
-flags and environment settings take precedence over file values. API keys are
-not stored in this file—use `SOLAI_NODE_API_KEY` or `--api-key`.
+flags and environment settings—including `--worker-tick-ms` and
+`SOLAI_NODE_WORKER_TICK_MS`—take precedence over file values. API keys are not
+stored in this file—use `SOLAI_NODE_API_KEY` or `--api-key`.
 
 `worker_tick_ms` configures local queue polling. It must be between 10 and
 60,000 milliseconds; the default is 1,000 milliseconds.
