@@ -104,7 +104,8 @@ mode control, bounded event inspection, bounded metering inspection, job list an
 detail inspection, routing inspection, assignment, cancellation, and retry.
 Provider administration now includes bounded list and detail inspection, inventory
 refresh, availability state control, guarded deletion, pricing, availability
-scheduling, and heartbeat updates.
+scheduling, and heartbeat updates. The first protected provider-policy routes now
+also have in-process HTTP coverage.
 
 This public docs repository tracks roadmap and community-facing progress.
 

@@ -56,6 +56,20 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Provider policy HTTP coverage added
+
+The Node test suite now exercises provider-policy operations through the actual
+HTTP router instead of only calling internal handlers.
+
+Publicly shareable progress:
+
+- Verifies protected price, schedule, and heartbeat routes
+- Verifies changes are visible through a subsequent provider read
+- Keeps this coverage local and independent from external model-provider access
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Native Coder job control completed
 
 SOLAI Coder can now inspect and control the normal lifecycle of asynchronous
