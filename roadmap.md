@@ -107,6 +107,8 @@ refresh, availability state control, guarded deletion, pricing, availability
 scheduling, and heartbeat updates. The first protected provider-policy routes now
 also have in-process HTTP coverage, including bounded filtering, state changes,
 and active-job deletion protection.
+The core job lifecycle now has matching HTTP coverage for creation, inspection,
+routing, cancellation, and retry.
 
 This public docs repository tracks roadmap and community-facing progress.
 

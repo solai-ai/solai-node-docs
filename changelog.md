@@ -72,6 +72,20 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Job lifecycle HTTP coverage added
+
+The Node test suite now exercises the normal asynchronous job lifecycle through
+the actual HTTP router.
+
+Publicly shareable progress:
+
+- Verifies creation, bounded filtered listing, detail, and route inspection
+- Verifies cancellation and linked retry attempts
+- Keeps the lifecycle coverage local and independent from external model access
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Native Coder job control completed
 
 SOLAI Coder can now inspect and control the normal lifecycle of asynchronous
