@@ -114,6 +114,7 @@ Runtime metrics also show how many providers supply capacity telemetry.
 Operational provider lists can distinguish capacity-reporting providers from
 providers that have not reported capacity.
 Operator tooling can require a minimum number of reported free capacity slots.
+Operator tooling can sort provider inspection by reported available capacity.
 The core job lifecycle now has matching HTTP coverage for creation, inspection,
 routing, cancellation, and retry.
 Runtime diagnostics, metrics, mode changes, status, and mode events now also

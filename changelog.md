@@ -44,6 +44,7 @@ Publicly shareable progress:
 - Supports bounded provider listing by reported capacity state
 - Distinguishes providers with no capacity report from those below capacity
 - Filters provider lists by a minimum reported number of free capacity slots
+- Sorts provider lists by reported available capacity
 
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
