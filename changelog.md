@@ -24,6 +24,23 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Native Coder provider control completed
+
+SOLAI Coder can now inspect and operate the local-provider lifecycle from the
+same CLI used for jobs and runtime controls.
+
+Publicly shareable progress:
+
+- Added bounded, filterable provider listing and individual provider inspection
+- Added provider model-inventory refresh
+- Added available, disabled, and unavailable state controls
+- Added deletion with an explicit local confirmation flag
+- Node continues to reject deletion while active jobs reference the provider
+- Live acceptance confirmed control transitions against a local model provider
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Native Coder job control completed
 
 SOLAI Coder can now inspect and control the normal lifecycle of asynchronous
