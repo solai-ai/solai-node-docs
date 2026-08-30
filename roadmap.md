@@ -116,6 +116,8 @@ The core job lifecycle now has matching HTTP coverage for creation, inspection,
 routing, cancellation, and retry.
 Runtime diagnostics, metrics, mode changes, status, and mode events now also
 have local HTTP coverage with authorization checks.
+Local runtime state writes now serialize concurrent updates before atomic file
+replacement.
 Worker-completed jobs now have matching HTTP coverage for persisted detail,
 metering, and completion-event inspection.
 A 20-case local HTTP contract hardening round now covers diagnostics, API-key

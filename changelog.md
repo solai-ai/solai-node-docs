@@ -6,6 +6,14 @@ partner-specific logic.
 
 ## 2026-08-30
 
+### Local runtime state writes hardened
+
+Local state persistence now serializes concurrent updates before atomically
+replacing the state file.
+
+This update does not expose credentials, provider addresses, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Provider heartbeat capacity persistence added
 
 Provider heartbeat capacity and active-job data is now retained in the provider
