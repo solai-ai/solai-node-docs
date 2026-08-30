@@ -18,6 +18,7 @@ Publicly shareable progress:
 - Returns the persisted fields through provider inspection
 - Preserves provider status when a heartbeat only updates capacity data
 - Coder sends only explicitly supplied heartbeat fields
+- Coder rejects locally inconsistent capacity values before sending
 
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.

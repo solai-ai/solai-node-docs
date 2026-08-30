@@ -83,3 +83,5 @@ exceed a provider's known capacity.
 Providers at reported capacity are excluded from routing and reject new explicit
 job assignments until their next available-capacity heartbeat.
 Capacity-only heartbeats preserve the provider's current availability state.
+Coder rejects an active-job count greater than supplied capacity before sending a
+heartbeat request.
