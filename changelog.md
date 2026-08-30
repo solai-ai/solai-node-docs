@@ -60,6 +60,7 @@ Publicly shareable progress:
 - Supports a bounded local queue-worker polling interval
 - Allows CLI and environment overrides for the polling interval
 - Exposes the effective polling interval in runtime status
+- Rejects explicitly empty configured API keys at startup
 
 This update does not expose credentials, provider addresses, private routing
 policy, billing calculations, partner logic, or infrastructure topology.

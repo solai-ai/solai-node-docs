@@ -17,6 +17,9 @@ flags and environment settings—including `--worker-tick-ms` and
 `SOLAI_NODE_WORKER_TICK_MS`—take precedence over file values. API keys are not
 stored in this file—use `SOLAI_NODE_API_KEY` or `--api-key`.
 
+When configured, an API key must not be blank. Node rejects an explicitly empty
+key at startup instead of silently running without authentication.
+
 `worker_tick_ms` configures local queue polling. It must be between 10 and
 60,000 milliseconds; the default is 1,000 milliseconds.
 
