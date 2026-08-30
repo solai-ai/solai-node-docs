@@ -112,6 +112,7 @@ Routing and explicit assignment now exclude providers at their reported capacity
 Runtime metrics now include the aggregate number of providers at reported capacity.
 Operational provider lists can distinguish capacity-reporting providers from
 providers that have not reported capacity.
+Operator tooling can require a minimum number of reported free capacity slots.
 The core job lifecycle now has matching HTTP coverage for creation, inspection,
 routing, cancellation, and retry.
 Runtime diagnostics, metrics, mode changes, status, and mode events now also
