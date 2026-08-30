@@ -58,6 +58,7 @@ Publicly shareable progress:
 - Validates the data directory before opening the HTTP listener
 - Supports a bounded local queue-worker polling interval
 - Allows CLI and environment overrides for the polling interval
+- Exposes the effective polling interval in runtime status
 
 This update does not expose credentials, provider addresses, private routing
 policy, billing calculations, partner logic, or infrastructure topology.

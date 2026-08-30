@@ -38,6 +38,7 @@ boundary and the integration model.
 - provider heartbeat category
 - reported provider capacity, active-job, and available-slot metrics
 - runtime mode controls for running, paused, and draining operation
+- effective local worker polling interval in runtime status
 - structured execution failure records
 
 ## What SOLAI Coder owns
