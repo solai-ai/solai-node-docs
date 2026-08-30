@@ -86,6 +86,20 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Runtime operations HTTP coverage added
+
+The Node test suite now exercises the operational runtime endpoints through the
+actual HTTP router.
+
+Publicly shareable progress:
+
+- Verifies public health diagnostics and API-key protection for operator endpoints
+- Verifies metrics, runtime mode changes, persisted runtime status, and mode events
+- Keeps the operational coverage local and independent from external model access
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Native Coder job control completed
 
 SOLAI Coder can now inspect and control the normal lifecycle of asynchronous
