@@ -6,6 +6,20 @@ partner-specific logic.
 
 ## 2026-08-30
 
+### Provider heartbeat capacity persistence added
+
+Provider heartbeat capacity and active-job data is now retained in the provider
+descriptor used by operational inspection.
+
+Publicly shareable progress:
+
+- Persists supplied capacity and active-job counts
+- Rejects heartbeat data where active jobs exceed known capacity
+- Returns the persisted fields through provider inspection
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Strict local runtime configuration added
 
 SOLAI Node can now load its bind address and runtime data directory from a

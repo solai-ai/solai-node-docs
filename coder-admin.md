@@ -35,6 +35,7 @@ SOLAI Coder can later use from the CLI/TUI:
 - provider disable
 - provider pricing metadata
 - provider availability schedule metadata
+- provider heartbeat capacity and active-job metadata
 - structured missing-provider errors
 - runtime metrics
 - job lookup and cancellation
@@ -77,3 +78,5 @@ solai job retry
 
 Coder should make Node easy to operate. Node should remain the source of truth for
 provider state, inference jobs, metering, and runtime policy.
+Heartbeat capacity and active-job counts are persisted by Node; active jobs cannot
+exceed a provider's known capacity.
