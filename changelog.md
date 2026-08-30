@@ -24,6 +24,23 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Native Coder job control completed
+
+SOLAI Coder can now inspect and control the normal lifecycle of asynchronous
+Node jobs from the main CLI.
+
+Publicly shareable progress:
+
+- Added bounded, filterable job listing
+- Added persisted job detail and route inspection
+- Added assignment to an available provider
+- Added explicit cancellation and retry commands
+- Retry preserves history by creating a linked new attempt
+- Live acceptance confirmed cancellation, retry, real model completion, and metering
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ## 2026-08-29
 
 ### First native SOLAI Coder client completed
