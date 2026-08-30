@@ -103,8 +103,8 @@ provider discovery, asynchronous chat execution, readiness and metrics, runtime
 mode control, bounded event inspection, bounded metering inspection, job list and
 detail inspection, routing inspection, assignment, cancellation, and retry.
 Provider administration now includes bounded list and detail inspection, inventory
-refresh, availability state control, and guarded deletion. Provider heartbeat and
-pricing/schedule controls remain in progress.
+refresh, availability state control, guarded deletion, pricing, availability
+scheduling, and heartbeat updates.
 
 This public docs repository tracks roadmap and community-facing progress.
 

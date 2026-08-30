@@ -41,6 +41,21 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Native Coder provider policy controls completed
+
+SOLAI Coder can now maintain the operational policy data carried by a local
+provider descriptor.
+
+Publicly shareable progress:
+
+- Added per-model positive-decimal price updates
+- Added daily availability windows using 24-hour times and optional IANA timezones
+- Added provider heartbeats for status, capacity, and active-job counts
+- Live acceptance confirmed all three operations persist through a running Node
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Native Coder job control completed
 
 SOLAI Coder can now inspect and control the normal lifecycle of asynchronous
