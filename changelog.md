@@ -17,6 +17,7 @@ Publicly shareable progress:
 - Rejects unknown configuration fields at startup
 - CLI and environment values override file settings
 - Keeps API keys outside normal configuration files
+- Validates the data directory before opening the HTTP listener
 
 This update does not expose credentials, provider addresses, private routing
 policy, billing calculations, partner logic, or infrastructure topology.

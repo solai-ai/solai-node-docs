@@ -14,3 +14,6 @@ settings. It is passed through `solai-node serve --config PATH` or the
 The file accepts only `bind` and `data_dir`; unknown fields are rejected. CLI
 flags and environment settings take precedence over file values. API keys are
 not stored in this file—use `SOLAI_NODE_API_KEY` or `--api-key`.
+
+Node creates a missing data directory at startup. If the configured path exists
+but is a file rather than a directory, startup fails before opening the listener.
