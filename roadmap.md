@@ -105,7 +105,8 @@ detail inspection, routing inspection, assignment, cancellation, and retry.
 Provider administration now includes bounded list and detail inspection, inventory
 refresh, availability state control, guarded deletion, pricing, availability
 scheduling, and heartbeat updates. The first protected provider-policy routes now
-also have in-process HTTP coverage.
+also have in-process HTTP coverage, including bounded filtering, state changes,
+and active-job deletion protection.
 
 This public docs repository tracks roadmap and community-facing progress.
 

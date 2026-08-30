@@ -65,6 +65,8 @@ Publicly shareable progress:
 
 - Verifies protected price, schedule, and heartbeat routes
 - Verifies changes are visible through a subsequent provider read
+- Verifies bounded provider filters, availability transitions, and active-job
+  deletion protection
 - Keeps this coverage local and independent from external model-provider access
 
 This update does not expose provider addresses, credentials, private routing
