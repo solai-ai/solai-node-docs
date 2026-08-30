@@ -99,8 +99,9 @@ provider adapter boundary, provider protocol classification, and the first real
 local chat inference path with persisted results, token usage, and metering. The
 real path has been validated end to end against a live local model provider.
 SOLAI Coder now also has its first native Node client commands for health,
-provider discovery, and asynchronous chat execution. Richer provider, job,
-runtime, event, and metering administration remains in progress.
+provider discovery, asynchronous chat execution, readiness and metrics, runtime
+mode control, bounded event inspection, and bounded metering inspection. Richer
+provider and job administration remains in progress.
 
 This public docs repository tracks roadmap and community-facing progress.
 

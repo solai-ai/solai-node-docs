@@ -4,6 +4,26 @@ This changelog tracks public SOLAI Node progress without exposing private runtim
 implementation details, provider integrations, billing internals, credentials, or
 partner-specific logic.
 
+## 2026-08-30
+
+### Native Coder operations expanded
+
+SOLAI Coder can now inspect and control the essential operational state of a
+running SOLAI Node from the main CLI.
+
+Publicly shareable progress:
+
+- Added Node version and readiness diagnostics
+- Added provider, job, and metering counters
+- Added runtime status and running/paused/draining mode controls
+- Added bounded, filterable runtime event inspection
+- Added bounded, filterable metering inspection
+- Client-side limits match the Node maximum of 500 records
+- Live acceptance confirmed the full Coder-to-Node-to-local-model operations path
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ## 2026-08-29
 
 ### First native SOLAI Coder client completed
