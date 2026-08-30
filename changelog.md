@@ -56,6 +56,7 @@ Publicly shareable progress:
 - CLI and environment values override file settings
 - Keeps API keys outside normal configuration files
 - Validates the data directory before opening the HTTP listener
+- Supports a bounded local queue-worker polling interval
 
 This update does not expose credentials, provider addresses, private routing
 policy, billing calculations, partner logic, or infrastructure topology.

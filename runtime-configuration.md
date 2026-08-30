@@ -7,13 +7,17 @@ settings. It is passed through `solai-node serve --config PATH` or the
 ```json
 {
   "bind": "127.0.0.1:9876",
-  "data_dir": "/var/lib/solai-node"
+  "data_dir": "/var/lib/solai-node",
+  "worker_tick_ms": 1000
 }
 ```
 
-The file accepts only `bind` and `data_dir`; unknown fields are rejected. CLI
+The file accepts only `bind`, `data_dir`, and `worker_tick_ms`; unknown fields are rejected. CLI
 flags and environment settings take precedence over file values. API keys are
 not stored in this file—use `SOLAI_NODE_API_KEY` or `--api-key`.
+
+`worker_tick_ms` configures local queue polling. It must be between 10 and
+60,000 milliseconds; the default is 1,000 milliseconds.
 
 Node creates a missing data directory at startup. If the configured path exists
 but is a file rather than a directory, startup fails before opening the listener.
