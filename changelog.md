@@ -114,6 +114,20 @@ Publicly shareable progress:
 This update does not expose provider addresses, credentials, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### HTTP contract hardening round completed
+
+Twenty additional local HTTP contract cases now protect the operational surface
+used by SOLAI Coder and standalone Node operators.
+
+Publicly shareable progress:
+
+- Verifies public diagnostics, bearer authentication, and protected read routes
+- Verifies invalid provider and job requests return structured HTTP errors
+- Verifies constrained job-status transitions and terminal-job protections
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Native Coder job control completed
 
 SOLAI Coder can now inspect and control the normal lifecycle of asynchronous

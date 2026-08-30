@@ -113,6 +113,8 @@ Runtime diagnostics, metrics, mode changes, status, and mode events now also
 have local HTTP coverage with authorization checks.
 Worker-completed jobs now have matching HTTP coverage for persisted detail,
 metering, and completion-event inspection.
+A 20-case local HTTP contract hardening round now covers diagnostics, API-key
+authentication, structured validation errors, and job lifecycle protections.
 
 This public docs repository tracks roadmap and community-facing progress.
 
