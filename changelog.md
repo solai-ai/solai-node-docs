@@ -6,6 +6,14 @@ partner-specific logic.
 
 ## 2026-08-31
 
+### Coder Node error feedback improved
+
+Coder now displays structured Node error codes and messages, and provides a
+direct API-key configuration hint when Node rejects a request for authorization.
+
+This update does not expose credentials, provider addresses, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Interrupted local jobs recover on restart
 
 Jobs persisted as running are returned to the queue when the local runtime
