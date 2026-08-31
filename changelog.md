@@ -10,6 +10,7 @@ partner-specific logic.
 
 Operators can explicitly remove stale capacity and active-job telemetry from a
 provider heartbeat without changing its provider status.
+The operational event stream records this action explicitly for audit visibility.
 
 This update does not expose credentials, provider addresses, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
