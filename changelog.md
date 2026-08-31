@@ -14,6 +14,14 @@ direct API-key configuration hint when Node rejects a request for authorization.
 This update does not expose credentials, provider addresses, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
 
+### Native Node CLI error feedback improved
+
+The native Node CLI now displays structured runtime error codes and messages,
+with API-key configuration guidance for authorization failures.
+
+This update does not expose credentials, provider addresses, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Interrupted local jobs recover on restart
 
 Jobs persisted as running are returned to the queue when the local runtime
