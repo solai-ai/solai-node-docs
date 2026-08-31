@@ -4,6 +4,16 @@ This changelog tracks public SOLAI Node progress without exposing private runtim
 implementation details, provider integrations, billing internals, credentials, or
 partner-specific logic.
 
+## 2026-08-31
+
+### Provider capacity telemetry clearing added
+
+Operators can explicitly remove stale capacity and active-job telemetry from a
+provider heartbeat without changing its provider status.
+
+This update does not expose credentials, provider addresses, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ## 2026-08-30
 
 ### Local runtime state writes hardened
