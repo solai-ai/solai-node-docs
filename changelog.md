@@ -6,6 +6,14 @@ partner-specific logic.
 
 ## 2026-08-31
 
+### Interrupted local jobs recover on restart
+
+Jobs persisted as running are returned to the queue when the local runtime
+restarts, preventing interrupted work from remaining stuck indefinitely.
+
+This update does not expose credentials, provider addresses, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ### Provider capacity telemetry clearing added
 
 Operators can explicitly remove stale capacity and active-job telemetry from a
