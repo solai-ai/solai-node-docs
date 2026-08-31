@@ -10,6 +10,7 @@ partner-specific logic.
 
 Jobs persisted as running are returned to the queue when the local runtime
 restarts, preventing interrupted work from remaining stuck indefinitely.
+Each recovered job is recorded in the operational event stream.
 
 This update does not expose credentials, provider addresses, private routing
 policy, billing calculations, partner logic, or infrastructure topology.
