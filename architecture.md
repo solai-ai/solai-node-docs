@@ -17,7 +17,21 @@ boundary and the integration model.
 
 - **Embedded**: SOLAI Coder starts or administers a local SOLAI Node for the user
 - **Standalone local**: SOLAI Node runs by itself on a local or provider machine
-- **Standalone remote**: SOLAI Node runs as a service for DApps, applications, and partners
+- **Gateway-connected provider**: SOLAI Node stays private and leases authorized
+  jobs over an outbound connection to a SOLAI Gateway
+
+## Access boundary
+
+Local administration and remote consumption are separate security boundaries.
+Provider administration, pricing, capacity, runtime controls, and global
+observability remain local-only. Provider Nodes do not expose consumer ports;
+they establish outbound HTTPS connections to a SOLAI Gateway.
+
+Consumers send wallet-signed requests to the Gateway. The Gateway verifies active
+smart-contract authorization, expiry, replay protection, and ownership before
+dispatch. Nodes execute only jobs carrying a valid, short-lived Gateway-signed
+authorization receipt bound to the job payload. API keys are not remote consumer
+identity.
 
 ## What SOLAI Node owns
 

@@ -4,6 +4,56 @@ This changelog tracks public SOLAI Node progress without exposing private runtim
 implementation details, provider integrations, billing internals, credentials, or
 partner-specific logic.
 
+## 2026-09-02
+
+### Signed Gateway job lifecycle foundation added
+
+The private runtime now has the first functional contract-authorized transport
+foundation: versioned wallet envelopes, canonical payload hashes, provider lease
+authentication, signed Gateway receipts, isolated job ownership, outbound Node
+polling, and signed result and metering submission. An in-process lifecycle test
+covers dispatch through completion. Production Solana account verification remains
+fail-closed and will follow the versioned on-chain program contract.
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
+### Gateway-connected remote access boundary specified
+
+The remote access architecture now explicitly separates local administration from
+remote inference consumption. Administrative provider, pricing, capacity, runtime,
+and global observability controls remain local-only. Provider Nodes remain private
+and lease authorized jobs through outbound HTTPS connections to a SOLAI Gateway.
+The Gateway verifies wallet signatures against active smart contracts, and Nodes
+execute only jobs carrying short-lived signed authorization receipts bound to the
+job payload. API keys are not remote consumer identity.
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
+## 2026-09-01
+
+### Standalone user service and live acceptance automation added
+
+Standalone Linux installations now have a user-level service template with
+automatic restart and persistent local state. An opt-in acceptance command can
+probe a configured Ollama provider, execute a real chat job, and validate its
+result and metering record. The installed-service path has been validated end to
+end against local model hardware.
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
+### Provider inventory refresh hardened
+
+Refreshing a provider's discovered model inventory now preserves its operational
+status, reported capacity and active-job telemetry, pricing, and availability
+schedule. Local HTTP coverage verifies provider discovery and refresh without
+requiring access to a LAN model provider.
+
+This update does not expose provider addresses, credentials, private routing
+policy, billing calculations, partner logic, or infrastructure topology.
+
 ## 2026-08-31
 
 ### Coder Node error feedback improved

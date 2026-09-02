@@ -15,16 +15,16 @@ SOLAI Coder is the public local-first coding experience.
 SOLAI Node is the inference layer that powers provider discovery, workload routing,
 usage tracking, SOLAI Coder, and DApps across multiple market segments.
 
-The Coder can use a local embedded Node for a simple user experience. Partners and
-larger deployments can use SOLAI Node as a standalone service when they need
-authenticated inference access without the full Coder experience.
+The Coder can use a local embedded Node for a simple user experience. Provider and
+partner deployments can run a private SOLAI Node that leases contract-authorized
+workloads from a SOLAI Gateway over an outbound connection.
 
 ## Public milestones
 
 ### Phase 1: Foundation
 
 - Define the boundary between SOLAI Coder and SOLAI Node
-- Document embedded, standalone local, and standalone remote deployment modes
+- Document embedded, standalone local, and Gateway-connected provider modes
 - Keep the public Coder workflow stable while Node work moves behind a private runtime
 
 ### Phase 2: Contracts
@@ -32,6 +32,10 @@ authenticated inference access without the full Coder experience.
 - Define versioned job contracts
 - Define provider capability contracts
 - Define health, metrics, heartbeat, and usage event contracts
+- Separate local administration from the remote inference-consumption contract
+- Authorize remote consumers through wallet signatures verified against active
+  smart contracts, with expiration, replay protection, and owner isolation
+- Define signed job authorization receipts for private provider Nodes
 - Keep the contracts stable enough for Coder and partner integrations
 
 ### Phase 3: Runtime
@@ -39,7 +43,7 @@ authenticated inference access without the full Coder experience.
 - Add the standalone Node runtime
 - Add local configuration and secure credential loading
 - Add health checks, metrics, logs, and job status endpoints
-- Support local and remote operation
+- Support local and outbound Gateway-connected operation
 
 ### Phase 4: Provider network
 
@@ -81,6 +85,16 @@ The public repository should not expose:
 ## Current status
 
 The SOLAI Node repository has been created as a private runtime repository.
+The remote security boundary is now specified: administration remains local-only,
+provider Nodes stay private, and consumers reach a SOLAI Gateway using wallet
+signatures authorized by verifiable active smart contracts. Nodes lease jobs over
+outbound HTTPS and verify signed authorization receipts before execution. API keys
+are not remote consumer identity.
+The signed Gateway lifecycle foundation is now implemented, including canonical
+wallet envelopes, nonce protection, provider-authenticated leasing, payload-bound
+receipts, outbound Node polling, isolated ownership, and signed completion data.
+Production Solana account verification remains gated on the versioned on-chain
+program and account layout rather than using a permissive placeholder.
 The initial private runtime foundation is now in place, including versioned contract
 types, provider discovery, a standalone runtime entrypoint, health checks, provider
 listing, provider probing, initial job intake, provider administration, local runtime
@@ -109,6 +123,8 @@ also have in-process HTTP coverage, including bounded filtering, state changes,
 and active-job deletion protection.
 Heartbeat capacity and active-job counts are now persisted with validation.
 Operators can clear stale capacity telemetry when a provider stops reporting it.
+Refreshing a provider's model inventory preserves its status, capacity telemetry,
+pricing, and availability schedule, with local HTTP coverage for discovery and refresh.
 Routing and explicit assignment now exclude providers at their reported capacity.
 Automatic routing prefers compatible providers reporting more available capacity.
 Runtime metrics now include the aggregate number of providers at reported capacity.
@@ -130,6 +146,8 @@ A 20-case local HTTP contract hardening round now covers diagnostics, API-key
 authentication, structured validation errors, and job lifecycle protections.
 The runtime now has strict local JSON configuration for bind and data-directory
 settings while keeping API keys out of normal configuration files.
+Standalone Linux deployment now includes a user-level service template and
+opt-in real-provider acceptance automation with result and metering validation.
 
 This public docs repository tracks roadmap and community-facing progress.
 
